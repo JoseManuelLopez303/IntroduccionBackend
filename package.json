@@ -1,0 +1,19 @@
+{
+  "name": "index.js",
+  "version": "1.0.0",
+  "description": "Primer uso del modulo HTTP en node.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoseManuelLopez303/Introdduccion-BackEnd.git"
+  },
+  "author": "Jose Manuel Lopez Gonzalez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JoseManuelLopez303/Introdduccion-BackEnd/issues"
+  },
+  "homepage": "https://github.com/JoseManuelLopez303/Introdduccion-BackEnd#readme"
+}
