@@ -10,3 +10,12 @@ http.createServer(function (request,response) {
         filePath = './index.html';
 
     }
+    var extname = String(path.extname(filePath)).toLowerCase();
+    var ContentType = 'text/html';
+    var mimeTypes = {
+        '.html' : 'text/html',
+        '.js' : 'text/javascript',
+        '.css' : 'text/css',
+        '.jpg' : 'image/jpg'
+    };
+
