@@ -17,7 +17,8 @@ http.createServer(function (request,response) {
         '.js' : 'text/javascript',
         '.css' : 'text/css',
         '.jpg' : 'image/jpg',
-        '.png' : 'image/png'
+        '.png' : 'image/png',
+        '.ico' : 'image/ico'
     };
 
     contentType = mimeTypes[extname] || 'application/octet-stream';
