@@ -16,8 +16,12 @@ http.createServer(function (request,response) {
         '.html' : 'text/html',
         '.js' : 'text/javascript',
         '.css' : 'text/css',
-        '.jpg' : 'image/jpg'
+        '.jpg' : 'image/jpg',
+        '.png' : 'image/png'
     };
+
+    contentType = mimeTypes[extname] || 'application/octet-stream';
+
     fs.readFile(filePath,function(error,content){
         if(error) {
             if(error.code == 'ENOENT'){
@@ -28,7 +32,7 @@ http.createServer(function (request,response) {
             }
             else{
                 response.writeHead(500);
-                response.end('Sorry, check with the site admin for error: '+error.)
+                response.end('Sorry, check with the site admin for error: '+error.code+' ..\n');
                 response.end();
             }
 
@@ -38,10 +42,8 @@ http.createServer(function (request,response) {
             response.end(content, 'utf-8');
         }
         });
-    }
-
-}
+    
 
 }).listen(3000);
-console.log('Server running at http:// :3000');
+console.log('Server running at http://127.0.0.1:3000/');
 
